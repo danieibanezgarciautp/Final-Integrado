@@ -6,12 +6,22 @@
             <name>hoteldg_sigh</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries>
+                <!-- Bibliotecas necesarias para JSF -->
                 <library dirs="200">
-                    <file>${file.reference.itextpdf-5.5.13.jar}</file>
+                    <file>${file.reference.jakarta.jakartaee-api-10.0.0.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
-                    <file>${file.reference.jakarta.jakartaee-api-10.0.0.jar}</file>
+                    <file>${file.reference.jakarta.faces-4.0.1.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.jakarta.servlet-5.0.0.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <!-- Mantén tus otras dependencias -->
+                <library dirs="200">
+                    <file>${file.reference.itextpdf-5.5.13.jar}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
                 <library dirs="200">
